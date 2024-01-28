@@ -1,0 +1,242 @@
+.poster-anime {
+  height: 580px;
+}
+
+.poster-image {
+  box-shadow: inset -11rem -1rem 9rem #0e0e12;
+  /* max-width: 1920px; */
+}
+
+.shadow {
+  box-shadow: inset 18em -16em 12em #0e0e12;
+  background: #0e0e126e;
+  z-index: 1;
+}
+
+.info-anime {
+  max-width: 1630px;
+  padding-top: 9rem;
+}
+
+.sort-ani {
+  padding-left: 5px;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+.title-ani {
+  font-size: 35px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.subtitle-ani {
+  padding-left: 5px;
+  padding-bottom: 10px;
+  color: #969ca8;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.genres-ani {
+  display: flex;
+  width: 100%;
+}
+
+.btn-genre {
+  border: 1px solid #969ca8;
+  padding: 5px 8px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* estudar */
+.sinopse-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  width: 100%;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.btn-ani > a {
+  border: 2px solid #f2000d;
+  background: #f2000d;
+  width: 170px;
+  border-radius: 30px;
+}
+
+.tag-nota {
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px #969ca8;
+}
+
+.col-ani {
+  max-width: 25%;
+}
+
+.col-ani img {
+  width: 100%;
+}
+
+.hover {
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  display: inline-block;
+  position: absolute;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.86) 0,
+    rgba(0, 0, 0, 0.39) 37%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.info {
+  z-index: 8;
+  position: absolute;
+  padding: 4px 13px;
+  bottom: 0px;
+  display: flex;
+  right: 0;
+  font-size: 15px;
+  width: 100%;
+  justify-content: center;
+  text-transform: lowercase;
+  font-weight: 400;
+}
+
+.info-content {
+  z-index: 10;
+  display: none;
+  position: absolute !important;
+  bottom: 34px;
+  right: 10px;
+  background: #1b1d24e3;
+  border: 1px solid #0000004d;
+  padding: 5px 15px;
+  width: 73%;
+  height: 73%;
+  left: 9px;
+  font-size: 14px;
+  color: #ccc;
+  border-radius: 0.5rem;
+  font-weight: normal;
+  /* animation: dropdown 0.2s linear forwards; */
+}
+
+.format-temp {
+  position: absolute;
+  top: 13px;
+  text-shadow: 0px 0px 13px rgba(0, 0, 0, 0.98);
+  color: #ffffffc2;
+  background: #1b1d24e3;
+  border: 1px solid #0000004d;
+  padding: 2px 0px;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+  border-radius: 7px;
+  height: 30px;
+  right: 10px;
+  font-size: 11px;
+}
+
+.season-name {
+  font-size: 15px;
+  padding-top: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.season-temp {
+  font-size: 14px;
+  padding-top: 5px;
+  color: #969ca8;
+  font-weight: 600;
+}
+
+.hover-icon {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* .glide {
+  width: 70%;
+} */
+
+.hover-div {
+  background-color: #0000004d;
+}
+
+.hover-div,
+.hover-icon {
+  opacity: 0;
+}
+
+.hover-icon {
+  transform: rotate(180deg);
+}
+
+.hover-div:hover {
+  animation: fade 1s;
+  animation-fill-mode: forwards;
+}
+
+.hover-div:hover .hover-icon {
+  animation: fadeAndRotate 1s;
+  animation-fill-mode: forwards;
+}
+
+.info:hover + .info-content {
+  /* animation: aShow 1s;
+  animation-fill-mode: forwards; */
+  display: block;
+}
+
+/* @keyframes aShow {
+  from {display: none;}
+  to {display: block;}
+} */
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeAndRotate {
+  from {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
